@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content= "">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<title> NewLinum web site coming soon - quantum-defying, secured network</title>
+
+<style type="text/css">
+<!--
+-->
+body{
+  margin:0;
+  padding:0;
+  background-color: #ffffff;
+  font-family:  "Open Sans", sans-serif;;
+}
+.visible{
+  display:block;
+  padding:10px;
+  width: 98%;
+  /* 0.5625 is for 16:9 widescreen video, use 0.75 4:3 */
+  height: calc(.5625 * 98vw);
+  max-width: 1280px;
+  /* Max-height is 0.5625 times of max-width */
+  max-height: 720px;
+  min-width: 320px;
+  /* Min-height is 0.5625 times of min-width */
+  min-height: 180px;
+}
+#image{
+  max-width: 840px !important;
+  height: auto !important;
+}
+.video{
+  margin: 1em auto;
+  padding:0;
+}
+.headline{
+  display:block;
+  margin: 1em auto;
+  width: 100%;
+}
+.headline p{
+  padding: 10px 20px 10px 20px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  color: #1175f8;
+  text-align: center;
+}
+.foot {
+  padding: 10px 0 20px 0;
+}
+.foot p{
+  padding: 5px 0 5px 0;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  color: #141414;
+  text-align: center;
+}
+.foot a {
+  color: #141414;
+  text-decoration: none;
+}
+.hide{
+  display: none;
+}
+</style>
+</head>
+
+
+<body >
+<div align="center" class="video">
+  <iframe id="video" class="visible" src="https://player.vimeo.com/video/745551458?autoplay=1&amp;loop=0&amp;muted=0&amp;h=98c02bc394&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Newlinum Video 1.m4v" ></iframe>
+  <img id="image" class="hide" src="https://i.ibb.co/Q85hZ74/New-Linum-coming-soon-Edited.png" alt="image-hero">
+</div>
+<div class="headline">
+  <p>Secure Quantum-defying Network Technology <br>
+  for the Next Millennium</p>
+</div>
+<div class="foot">
+  <p>For serious inquiries, contact <a href="mailto:info@newlinum.com">info@newlinum.com</a> </p>
+</div>
+
+</body>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+
+var iframe = document.querySelector('iframe');
+var player = new Vimeo.Player(iframe);
+
+player.on('ended', function() {
+  document.getElementById("video").classList.add('hide');
+  document.getElementById("video").classList.remove('visible');
+  document.getElementById("image").classList.add('visible');
+  document.getElementById("image").classList.remove('hide');
+});
+  
+</script>
+</html>
